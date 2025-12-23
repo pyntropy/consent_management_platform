@@ -1,13 +1,11 @@
  ```mermaid
   erDiagram
-    Bundle ||--o{ BundleConsent: "Содержит"
-    BundleChains }|--|{ Chains: "Содержит"
+    Bundle ||--o{ BundleConsents: "Содержит"
+    BundleConsents }|--|{ Consents: "Одно или несколько согласий в разных сборках"
 
-    Chains ||--|| ConsentsChain: "Имеет"
-    ConsentsChain ||--|{ Consents: "Указывает на"
+    Consents ||--o{ Documents: "Одно согласие может б"
  
     Consents {
         id UUID "id согласия."
-        previous_id UUID "id предыдущей версии согласия."
     }
  ```

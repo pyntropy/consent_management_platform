@@ -1,22 +1,23 @@
 ```mermaid
 classDiagram
-
+    
     class Bundle {
-        UUID id – id пакета согласий
-        date created_at
-        date updated_at
-        UUID created_by
-        UUID updated_by
-        boll is_deleted 
+        id UUID — id пакета согласий
+        title str — название пакета
+        attrs dict — атрибуты пакета. 
         ———
         str title — название пакета
-        float version — версия пакета
-        List products
-        List consents
+        consents list
     }
     
-    class Chains{
-        +uuid id
+    class Consent{
+        + id UUID
     }
-
-    Bundle "1" o-- "0..*" Chains
+    
+    class Documents{
+        + id UUID
+        + consent_id UUID
+    }
+    Bundle "1" o-- "0..*" Consent
+    Consent "1" o-- "0..*" Documents
+```
