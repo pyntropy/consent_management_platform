@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
 
-    class ConsentBundleTemplate {
+    class Bundle {
         UUID id – id пакета согласий
         date created_at
         date updated_at
@@ -15,14 +15,8 @@ classDiagram
         List consents
     }
     
-
-    
-    class ConsentTemplate {
-        +uuid id
-    }
-    
-    class DataSet{
+    class Chains{
         +uuid id
     }
 
-    ConsentBundleTemplate "1" o-- "0..*" Consent
+    Bundle "1" o-- "0..*" Chains
