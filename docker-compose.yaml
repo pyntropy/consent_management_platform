@@ -2,12 +2,12 @@ version: '3.7'
 
 services:
   postgres:
-    image: postgres:latest
+    image: postgres:17
     container_name: cmp_postgres
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: secret
-      POSTGRES_DB: cpm_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: cmp_db
     ports:
       - "5432:5432"
     volumes:
