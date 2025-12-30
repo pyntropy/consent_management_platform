@@ -1,10 +1,6 @@
-from fastapi import FastAPI
-from app.routers import consents_router
+def main():
+    print("Hello from consent-management-platform!")
 
-app = FastAPI(
-    title="CMP",
-    version="0.0.1"
-)
 
-app.include_router(consents_router)
-
+if __name__ == "__main__":
+    main()
