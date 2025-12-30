@@ -1,0 +1,14 @@
+{
+  "bundle": {
+  },
+  "consents": [
+    {
+      "consentId": "1"
+    }
+  ],
+  "RequiredAttrs": [
+    {
+
+    }
+  ]
+}

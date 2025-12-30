@@ -1,0 +1,16 @@
+{
+  "id": "1234567890",
+  "policyAttrs": [
+    {
+      "name": "productId",
+      "value": "224266"
+    },
+    {
+      "name": "event",
+      "value": "subscribing"
+    },
+    {
+      ""
+    }
+  ]
+}

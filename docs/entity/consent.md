@@ -18,7 +18,15 @@
 
 Собираются в рамках сборок (bundle)
 
-| attribute | type | description |
-|-----------|------|-------------|
-| id        | UUID | consent     |
-|           |      |             |
+| attribute  | type     | nullable | description                       |
+|------------|----------|:--------:|-----------------------------------|
+| id         | UUID     |    NO    | id согласия.                      |
+| created_at | DATETIME |    NO    |                                   |
+| updated_at | DATETIME |    NO    |                                   |
+| deleted_at | DATETIME |   YES    |                                   |
+| created_by | UUID     |    NO    |                                   |
+| update_by  | UUID     |    NO    |                                   |
+| deleted_by | UUID     |   YES    |                                   |
+| signer_id  | UUID     |   YES    | id клиента, который дал согласие. |
+| subject_id | UUID     |   YES    |                                   |          |                                   |
+
